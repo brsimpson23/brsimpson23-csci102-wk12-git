@@ -38,3 +38,14 @@ def ScoreFinder(names, scores, player):
 def Union(lista, listb):
     listc = lista + listb
     return listc
+
+def Intersection(lista, listb):
+    listc = []
+    for value in lista:
+        cont = listb.count(value)
+        if cont > 0:
+            listc.append(value)
+        else:
+            continue
+    return listc
+
