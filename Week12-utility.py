@@ -6,10 +6,14 @@
 def PrintOutput(string):
     print('OUTPUT', string)
 
-def LoadFile(file)
+def LoadFile(file):
     with open(file, 'r') as text:
-        output = ''
+        output = []
         for line in text:
-            output += line
+            output.append(line)
     return output
 
+def UpdateString(modify, char, index):
+    modified = modify[:index] + char + modify[(index + 1):]
+    print('OUTPUT', modified)
+    
