@@ -17,3 +17,8 @@ def UpdateString(modify, char, index):
     modified = modify[:index] + char + modify[(index + 1):]
     print('OUTPUT', modified)
     
+def FindWordCount(lista, string):
+    counts = 0
+    for value in lista:
+        counts += value.count(string)
+    return counts
