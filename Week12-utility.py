@@ -10,7 +10,7 @@ def LoadFile(file):
     with open(file, 'r') as text:
         output = []
         for line in text:
-            output.append(line)
+            output.append(line[:-1])
     return output
 
 def UpdateString(modify, char, index):
