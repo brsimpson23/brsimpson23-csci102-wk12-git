@@ -35,3 +35,6 @@ def ScoreFinder(names, scores, player):
         ind = namesu.index(playeru)
         print('OUTPUT %s got a score of %d' % (player, scores[ind]))
     
+def Union(lista, listb):
+    listc = lista + listb
+    return listc
