@@ -49,3 +49,14 @@ def Intersection(lista, listb):
             continue
     return listc
 
+def NotIn(lista, listb):
+    listc = []
+    for value in lista:
+        cont = listb.count(value)
+        if cont > 0:
+            continue
+        else:
+            listc.append(value)
+    return listc
+
+
