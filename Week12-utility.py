@@ -22,3 +22,16 @@ def FindWordCount(lista, string):
     for value in lista:
         counts += value.count(string)
     return counts
+
+def ScoreFinder(names, scores, player):
+    namesu = []
+    playeru = player.lower()
+    for value in names:
+        namesu.append(value.lower())
+    cont = namesu.count(player)
+    if cont == 0:
+        print('OUTPUT player not found')
+    else:
+        ind = namesu.index(playeru)
+        print('OUTPUT %s got a score of %d' % (player, scores[ind]))
+    
